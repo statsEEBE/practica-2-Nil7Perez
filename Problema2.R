@@ -20,8 +20,8 @@ y_pred<- m*x_pred+b
 plot(x,y)
 lines(x_pred,y_pred)
 
-r2<-sum((y_pred-y_bar)^2)/sum((y-y_bar)^2)
-r<-sqrt(r2)
+r2<-sum((y_pred-y_bar)^2)/sum((y-y_bar)^2) # coeficient de determinacio
+r<-sqrt(r2) # coeficient de correlacio
 
 mod<-lm(y~x)#es posa primer eix y i despres eix x
 cor.test(x,y)# coeficient de determinacio r= arrel(r^2)
